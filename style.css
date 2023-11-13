@@ -1,0 +1,132 @@
+@charset "utf-8";
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:600px; } */
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+h1, h2{
+    font-weight: 900;
+    color: #000;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+     background-color: rgb(175, 223, 223);
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 15px;
+    animation: surgir 3s ease;
+    animation-timeline: view;
+    animation-range: cover 0% cover 40%;
+}
+
+section.modulo p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+section.modulo h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+section.modulo.content{
+    padding: 40px 0;
+    background: rgb(119, 3, 165);
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;                               
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: rgba(228, 225, 54, 0.651);
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    z-index: 50;
+    text-shadow: 5px 5px 5px #000000; 
+}
+
+/* section.modulo.parallax{
+    color: rgb(164, 5, 212);
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    z-index: 50;
+} */
+
+section.modulo.parallax:after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0,0) 0, rgba(0,0,0,0) 50%, #6002b8e8 100%);
+}
+
+section.modulo.parallax-1 {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/414/931/623/anime-jojo-s-bizarre-adventure-jotaro-kujo-star-platinum-jojo-s-bizarre-adventure-wallpaper-preview.jpg)
+}
+
+section.modulo.parallax-2{
+    background-image:url(https://i.pinimg.com/564x/82/6d/5a/826d5afc40891ec0c515a3b3199897bf.jpg)
+
+}
+
+section.modulo.parallax-3{
+    background-image:url(https://i.pinimg.com/564x/0b/0e/c8/0b0ec8231e59a791a89677e22a687b44.jpg) 
+
+} 
+
+/* section.modulo.parallax-4{
+    background-image: url(https://i.pinimg.com/564x/07/a7/77/07a7772cadaf1c16f6feb97cbe5cead2.jpg);
+} */
